@@ -1,85 +1,39 @@
-# Perfect Beauty Studio — Website
+# Perfect Beauty Studio Website
 
-Professional website for **Perfect Beauty Studio**, a beauty and nail salon in Moreleta Park, Pretoria, South Africa.
+## Deploy to GitHub Pages (IMPORTANT)
 
-**Address:** 641 Rubenstein Drive, Moreleta Park, Pretoria, South Africa  
-**Phone / WhatsApp:** +27 67 389 7135  
-**Booking:** [Fresha](https://www.fresha.com/a/perfect-beauty-studio-pretoria-641-rubenstein-drive-vx52zftc)
+Your repo root must look like this:
 
----
+```
+Perfect-Beauty-Studio/
+├── index.html
+├── about.html
+├── services.html
+├── professionals.html
+├── gallery.html
+├── contact.html
+├── booking.html
+├── style.css          ← MUST be here (root)
+├── script.js          ← MUST be here (root)
+├── favicon.svg
+├── favicon.ico
+└── assets/
+```
 
-## Pages
+### Steps
 
-| File | Description |
-|------|-------------|
-| `index.html` | Homepage — hero, services preview, about, reviews, location |
-| `services.html` | Full services list with categories and prices |
-| `gallery.html` | Gallery with professional placeholders |
-| `about.html` | About the studio |
-| `contact.html` | Contact details, map link, opening hours |
-| `booking.html` | Booking CTA (Fresha) + WhatsApp enquiry form |
+1. Go to your GitHub repo: Perfect-Beauty-Studio
+2. Delete ALL old files on GitHub
+3. Upload every file from this folder to the **root** of the repo
+   - Do NOT put files inside another folder called perfect-beauty-studio
+4. Settings → Pages → Branch: main → Folder: / (root)
+5. Wait 1–2 minutes
+6. Hard refresh the site (Ctrl+Shift+R)
 
----
+### Check that CSS loaded
 
-## Tech
+Open this URL — you should see CSS code, NOT a 404 page:
 
-- Pure HTML, CSS, JavaScript — no frameworks
-- Mobile-first responsive design
-- Sticky navigation, hamburger menu on mobile
-- Floating WhatsApp button
-- Back-to-top button
-- Subtle scroll animations
-- SEO metadata + Open Graph
-- GitHub Pages compatible
+https://mawelanoah.github.io/Perfect-Beauty-Studio/style.css
 
----
-
-## Deploy to GitHub Pages
-
-1. Create a new GitHub repository (e.g. `perfect-beauty-studio`).
-2. Upload the contents of this folder (or push via git).
-3. Go to **Settings → Pages**.
-4. Set source to the `main` branch and `/` (root).
-5. Your site will be live at `https://<username>.github.io/perfect-beauty-studio/`.
-
-For a custom domain, add a `CNAME` file with your domain name.
-
----
-
-## Replacing Placeholders
-
-### Photos
-Replace the “PHOTO COMING SOON” placeholder blocks in:
-- Hero section (`index.html`)
-- Gallery grid (`gallery.html` / homepage)
-- About image (`about.html` / homepage)
-
-Use the existing CSS classes (`.gallery-item`, `.about__image`, `.hero__placeholder`) or add `<img>` tags with `loading="lazy"`.
-
-### Social media
-Add official Instagram / Facebook links in the footer when verified.
-
----
-
-## Design Notes
-
-- Colour palette: soft blush, warm neutrals, cream backgrounds
-- Typography: Cormorant Garamond (headings) + Jost (body)
-- Elegant, feminine, modern, premium aesthetic
-- All prices and services sourced from the public Fresha listing
-- Real reviews attributed to Fresha; no fabricated content
-
----
-
-## Verified Information Used
-
-- Business name, address, opening hours
-- Fresha booking URL
-- Phone: +27 67 389 7135
-- Services & prices from Fresha
-- About text adapted from public Fresha description
-- Sample reviews from public Fresha reviews (with attribution)
-
----
-
-Built as a complete, production-ready demo for presentation to the salon owner.
+If you see 404, the style.css file is missing from the repo root.
